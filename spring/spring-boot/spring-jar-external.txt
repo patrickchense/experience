@@ -1,0 +1,9 @@
+在把springboot工程打jar，用在外部其他project过程中碰到问题
+1.bean 无法load
+	service load 不了
+	用@ComponentScan(basePackages = {"com.netease.epay.rule.sevice"})方式
+	repository load 不了
+	用@EnableJpaRepositories("com.netease.epay.rule.dao")方式
+	Entity load不了
+	@EntityScan("com.netease.epay.rule.entity")
+	
